@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcular Calificación Final</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <div class="form-container">
+        <h1>Calcular la calificación final de tu estudiante UAPA</h1>
+        <form id="gradeForm">
+            <label for="actividades">Actividades semanales (30% de la calificación)</label>
+            <input type="number" id="actividades" name="actividades" placeholder="0-100">
+            <span id="actividadesError" class="error"></span>
+
+            <label for="actitudes">Actitudes y Valores (5% de la calificación)</label>
+            <input type="number" id="actitudes" name="actitudes" placeholder="0-100">
+            <span id="actitudesError" class="error"></span>
+
+            <label for="evaluacion">Evaluación final (40% de la calificación)</label>
+            <input type="number" id="evaluacion" name="evaluacion" placeholder="0-100">
+            <span id="evaluacionError" class="error"></span>
+
+            <label for="trabajo">Trabajo de Investigación (15% de la calificación)</label>
+            <input type="number" id="trabajo" name="trabajo" placeholder="0-100">
+            <span id="trabajoError" class="error"></span>
+
+            <label for="participacion">Participación oral y escrita (10% de la calificación)</label>
+            <input type="number" id="participacion" name="participacion" placeholder="0-100">
+            <span id="participacionError" class="error"></span>
+
+            <button type="button" onclick="validarYCalcular()">Calcular</button>
+        </form>
+
+        <div id="resultado">
+            <p>La calificación final es: <span id="calificacionFinal"></span></p>
+        </div>
+    </div>
+
+    <footer>
+        <p > &copy Copyring UAPA (Johan Rojas) - 2024</p>
+    </footer>
+
+</body>
+
+<script src="SCRIPT/script.js"></script>
+
+</html>
